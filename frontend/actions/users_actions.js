@@ -12,3 +12,7 @@ export const receiveUsers = (users) => {
 export const fetchUsers = () => dispatch => {
   return UsersUtil.fetchUsers().then((users) => dispatch(receiveUsers(users)));
 };
+
+export const uploadUsers = (users) => dispatch => {
+  return UsersUtil.uploadCSV(users).then((users) => dispatch(receiveUsers(users)));
+};
