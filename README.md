@@ -1,8 +1,8 @@
 # Import CSV and Export to CSV and XLS
 
-[DEMO][heroku]
+[LIVE DEMO][heroku]
 
-
+![main screen](app/assets/images/demo.gif)
 
 [heroku]: https://importcsvexportxls.herokuapp.com/
 
