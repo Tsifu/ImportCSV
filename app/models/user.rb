@@ -1,9 +1,8 @@
 class User < ApplicationRecord
-  require 'csv'
 
   def self.import(file)
     CSV.foreach(file.path, skip_blanks: true, skip_lines: /^(?:,\s*)+$/, headers: true) do |row|
-      User.create! row.to_hash
+      User.create row.to_hash
     end
   end
 
