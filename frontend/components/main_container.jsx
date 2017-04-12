@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import Main from './main';
-import { fetchUsers, uploadUsers } from '../actions/users_actions';
+import { fetchUsers, uploadUsers, deleteUsers } from '../actions/users_actions';
 
 const mapStateToProps = state => {
   let loadedUsers = null;
@@ -17,6 +17,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => ({
   fetchUsers: () => dispatch(fetchUsers()),
   uploadUsers: (users) => dispatch(uploadUsers(users)),
+  deleteUsers: () => dispatch(deleteUsers()),
 });
 
 export default connect(

@@ -16,3 +16,7 @@ export const fetchUsers = () => dispatch => {
 export const uploadUsers = (users) => dispatch => {
   return UsersUtil.uploadCSV(users).then((users) => dispatch(receiveUsers(users)));
 };
+
+export const deleteUsers = () => dispatch => {
+  return UsersUtil.deleteUsers().then((users) => dispatch(receiveUsers(users)));
+};

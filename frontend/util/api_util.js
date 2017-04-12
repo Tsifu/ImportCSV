@@ -14,3 +14,10 @@ export const fetchUsers = () => {
     method: "GET",
   });
 };
+
+export const deleteUsers = () => {
+  return $.ajax({
+    url: 'api/users/1',
+    method: "DELETE"
+  });
+};

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:x="urn:schemas-microsoft-com:office:excel"
+  xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+  xmlns:html="http://www.w3.org/TR/REC-html40">
+  <Worksheet ss:Name="Sheet1">
+    <Table>
+      <Row>
+        <Cell><Data ss:Type="String">Name</Data></Cell>
+        <Cell><Data ss:Type="String">Steps</Data></Cell>
+        <Cell><Data ss:Type="String">Distance</Data></Cell>
+        <Cell><Data ss:Type="String">Minutes Exercised</Data></Cell>
+        <Cell><Data ss:Type="String">Hours of Sleep</Data></Cell>
+        <Cell><Data ss:Type="String">Calories Burned</Data></Cell>
+      </Row>
+    <% @users.each do |user| %>
+      <Row>
+        <Cell><Data ss:Type="String"><%= user.user %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= user.steps %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= user.distance %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= user.exercise %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= user.sleep %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= user.calories %></Data></Cell>
+      </Row>
+    <% end %>
+    </Table>
+  </Worksheet>
+</Workbook>
