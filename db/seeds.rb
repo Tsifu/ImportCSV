@@ -1,1 +1,1 @@
-User.create!(user: "Tsi", steps: 120, distance: 1.25, exercise: 15, sleep: 8, calories: 190);
+User.create!(user: "Tsi", hours: 120, rate: 1.25, age: 21, kpi: 8, rfk: 190);

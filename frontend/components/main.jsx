@@ -56,11 +56,11 @@ class Main extends React.Component {
         return (
           <TableRow key={user.id}>
             <TableRowColumn>{user.user}</TableRowColumn>
-            <TableRowColumn>{user.steps.toLocaleString()}</TableRowColumn>
-            <TableRowColumn>{user.distance}</TableRowColumn>
-            <TableRowColumn>{user.exercise}</TableRowColumn>
-            <TableRowColumn>{user.sleep}</TableRowColumn>
-            <TableRowColumn>{user.calories.toLocaleString()}</TableRowColumn>
+            <TableRowColumn>{user.hours.toLocaleString()}</TableRowColumn>
+            <TableRowColumn>{user.rate}</TableRowColumn>
+            <TableRowColumn>{user.age}</TableRowColumn>
+            <TableRowColumn>{user.kpi}</TableRowColumn>
+            <TableRowColumn>{user.rfk.toLocaleString()}</TableRowColumn>
           </TableRow>
         );
       });
@@ -73,11 +73,11 @@ class Main extends React.Component {
           >
           <TableRow>
             <TableHeaderColumn style={{color:'white'}}>Name</TableHeaderColumn>
-            <TableHeaderColumn style={{color:'white'}}>Steps</TableHeaderColumn>
-            <TableHeaderColumn style={{color:'white'}}>Distance</TableHeaderColumn>
-            <TableHeaderColumn style={{color:'white'}}>Minutes Exercised</TableHeaderColumn>
-            <TableHeaderColumn style={{color:'white'}}>Hours of Sleep</TableHeaderColumn>
-            <TableHeaderColumn style={{color:'white'}}>Calories Burned</TableHeaderColumn>
+            <TableHeaderColumn style={{color:'white'}}>Hours</TableHeaderColumn>
+            <TableHeaderColumn style={{color:'white'}}>Rate</TableHeaderColumn>
+            <TableHeaderColumn style={{color:'white'}}>Age</TableHeaderColumn>
+            <TableHeaderColumn style={{color:'white'}}>KPI</TableHeaderColumn>
+            <TableHeaderColumn style={{color:'white'}}>RFK</TableHeaderColumn>
           </TableRow>
         </TableHeader>
 
@@ -134,7 +134,7 @@ class Main extends React.Component {
 
         <div>
           <h3>Purpose</h3>
-          <p>As businesses move toward automating their processes, there might come an opportunity where you need to offer an interface for your client to migrate their legacy data into your application.  Since many organizations utilize spreadsheet to track and manipulate their in-house data, this is a live demonstration on importing csv files into a Ruby on Rails + React application.  Furthermore, the demo will showcase exporting the data into csv and xls format. Please check out my repository for implementation detail.</p>
+          <p>As businesses move toward automating their processes, there might come an opportunity where you need to offer an interface for your client to migrate their legacy data into your application.  Since many organizations utilize spreadsheet to track and manipulate their in-house data, this is a live demonstration on importing csv files into a Ruby on Rails + React application.  Furthermore, the demo will showcase exporting the data into csv and xls format. Please check out my <a className="repo" href="https://github.com/Tsifu/ImportCSV" target="_blank">repository</a> for implementation detail.</p>
 
           <div>
             <h3>Procedure</h3>
@@ -156,7 +156,7 @@ class Main extends React.Component {
               </li>
 
               <li>
-                <span>Step 5:</span> Press <i>"Reset Table"</i> to delete entries created by the "test.csv" file.
+                <span>Step 5:</span> Press <i>"Clear"</i> to delete entries created by the "test.csv" file.
               </li>
             </ul>
           </div>

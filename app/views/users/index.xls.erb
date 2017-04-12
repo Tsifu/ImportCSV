@@ -8,20 +8,20 @@
     <Table>
       <Row>
         <Cell><Data ss:Type="String">Name</Data></Cell>
-        <Cell><Data ss:Type="String">Steps</Data></Cell>
-        <Cell><Data ss:Type="String">Distance</Data></Cell>
-        <Cell><Data ss:Type="String">Minutes Exercised</Data></Cell>
-        <Cell><Data ss:Type="String">Hours of Sleep</Data></Cell>
-        <Cell><Data ss:Type="String">Calories Burned</Data></Cell>
+        <Cell><Data ss:Type="String">Hours</Data></Cell>
+        <Cell><Data ss:Type="String">Rate</Data></Cell>
+        <Cell><Data ss:Type="String">Age</Data></Cell>
+        <Cell><Data ss:Type="String">KPI</Data></Cell>
+        <Cell><Data ss:Type="String">RFK</Data></Cell>
       </Row>
     <% @users.each do |user| %>
       <Row>
         <Cell><Data ss:Type="String"><%= user.user %></Data></Cell>
-        <Cell><Data ss:Type="Number"><%= user.steps %></Data></Cell>
-        <Cell><Data ss:Type="Number"><%= user.distance %></Data></Cell>
-        <Cell><Data ss:Type="Number"><%= user.exercise %></Data></Cell>
-        <Cell><Data ss:Type="Number"><%= user.sleep %></Data></Cell>
-        <Cell><Data ss:Type="Number"><%= user.calories %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= user.hours %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= user.rate %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= user.age %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= user.kpi %></Data></Cell>
+        <Cell><Data ss:Type="Number"><%= user.rfk %></Data></Cell>
       </Row>
     <% end %>
     </Table>

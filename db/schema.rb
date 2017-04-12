@@ -17,11 +17,11 @@ ActiveRecord::Schema.define(version: 20170409041547) do
 
   create_table "users", force: :cascade do |t|
     t.string   "user"
-    t.integer  "steps"
-    t.float    "distance"
-    t.integer  "exercise"
-    t.float    "sleep"
-    t.integer  "calories"
+    t.integer  "hours"
+    t.float    "rate"
+    t.integer  "age"
+    t.float    "kpi"
+    t.integer  "rfk"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
