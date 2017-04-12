@@ -1,6 +1,6 @@
 # Import CSV and Export to CSV and XLS
 
-A live demonstration on importing CSV file to create entries in a Ruby on Rails + React application.  In addition, the demo exhibits exporting current data in csv or xls format.  
+A live demonstration on importing CSV file to create entries in a Ruby on Rails + React application.  In addition, the demo exhibits exporting current data in .csv or .xls format.  
 
 ## Implementation
 
@@ -19,7 +19,7 @@ def self.import(file)
 end
 ```
 
-Method to import the data from the csv file that was posted by the client.  Use skip_lines: to skip any blank rows to prevent any creation or saving errors.
+Method to import the data from the csv file that was posted by the client.  Use skip_lines: to skip any blank rows in the csv file to prevent any errors during creation.
 
 ### Controller
 
