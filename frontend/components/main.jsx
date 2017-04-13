@@ -134,7 +134,7 @@ class Main extends React.Component {
 
         <div>
           <h3>Purpose</h3>
-          <p>As businesses move toward automating their processes, you might need to offer an interface for your client to migrate their legacy data into your application.  Since many organizations utilize spreadsheet to track and manipulate their in-house data, this is a live demonstration on importing csv files into a Ruby on Rails + React application.  Furthermore, the demo will showcase exporting the data into csv and xls format. Please check out my <a className="repo" href="https://github.com/Tsifu/ImportCSV" target="_blank">repository</a> for implementation detail.</p>
+          <p>As businesses move toward automating their processes, you might need to offer an interface for your client to migrate their legacy data into your application.  Since many organizations utilize spreadsheet to track and manipulate their in-house data, this is a live demonstration on importing csv files into a Ruby on Rails + React application.  Furthermore, the demo showcases exporting the data into csv and xls format. Please check out my <a className="repo" href="https://github.com/Tsifu/ImportCSV" target="_blank">repository</a> for implementation detail.</p>
 
           <div>
             <h3>Procedure</h3>
